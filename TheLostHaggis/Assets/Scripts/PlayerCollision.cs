@@ -22,12 +22,13 @@ public class PlayerCollision : MonoBehaviour
         // getting a component (off the other object)
         SpriteRenderer spriteRenderer = otherObject.GetComponent<SpriteRenderer>();
 
+        Debug.Log("Colliding: " + isColliding);
         Debug.Log("Stop Touching me! " + otherName);
-        //Debug.Log("You have the following tag " + otherTag);
-        //Debug.Log("Your Physics Layer is " + layer);
-        //if (spriteRenderer != null)
-       // {
+        Debug.Log("You have the following tag " + otherTag);
+        Debug.Log("Your Physics Layer is " + layer);
+        if (spriteRenderer != null)
+        {
        //     spriteRenderer.color = Color.green;
-       // }
+        }
     }
 }

@@ -25,6 +25,7 @@ public class FloorCollision : MonoBehaviour
         Debug.Log("Collison");
         Debug.Log("Name" + otherName);
         Debug.Log("Tag" + otherTag);
+        Debug.Log("Layer" + layer);
         if (spriteRenderer != null)
         {
         //    spriteRenderer.color = Color.green;
