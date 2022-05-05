@@ -7,20 +7,20 @@ public class FloorCollision : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         //thing we ran into
-        GameObject othherObject = collision.gameObject;
+        GameObject otherObject = collision.gameObject;
 
         //gets the name of the object
-        string otherName = othherObject.name;
+        string otherName = otherObject.name;
 
         //check the tag on the object
-        string otherTag = othherObject.tag;
+        string otherTag = otherObject.tag;
 
         //we can get sorting layer of the obeject
-        int layer = othherObject.layer;
+        int layer = otherObject.layer;
 
         //we canm check if a script is on the object
         //getting a componetnt
-        SpriteRenderer spriteRenderer = othherObject.GetComponent<SpriteRenderer>();
+        SpriteRenderer spriteRenderer = otherObject.GetComponent<SpriteRenderer>();
 
         Debug.Log("Collison");
         Debug.Log("Name" + otherName);
