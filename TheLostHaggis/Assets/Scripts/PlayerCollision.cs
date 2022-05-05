@@ -10,7 +10,6 @@ public class PlayerCollision : MonoBehaviour
     {
 
         isColliding = true;
-
         //the thing we ran into
         GameObject otherObject = collision.gameObject;
         //the name of the other thing
