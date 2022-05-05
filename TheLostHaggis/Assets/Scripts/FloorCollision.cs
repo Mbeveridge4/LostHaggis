@@ -15,7 +15,7 @@ public class FloorCollision : MonoBehaviour
         //check the tag on the object
         string otherTag = otherObject.tag;
 
-        //we can get sorting layer of the obeject
+        //we can get sorting layer of the object
         int layer = otherObject.layer;
 
         //we canm check if a script is on the object
@@ -27,7 +27,7 @@ public class FloorCollision : MonoBehaviour
         Debug.Log("Tag" + otherTag);
         if (spriteRenderer != null)
         {
-            spriteRenderer.color = Color.green;
+        //    spriteRenderer.color = Color.green;
         }
 
 
