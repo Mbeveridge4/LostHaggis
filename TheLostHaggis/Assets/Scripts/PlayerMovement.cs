@@ -24,6 +24,7 @@ public class PlayerMovement : MonoBehaviour
             RigidBody.velocity = Vector2.up * jumpVelocity;
             //jumpCount--;
         }
+       
     }
     
     
