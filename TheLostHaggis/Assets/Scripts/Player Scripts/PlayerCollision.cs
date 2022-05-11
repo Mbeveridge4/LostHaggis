@@ -5,17 +5,20 @@ using UnityEngine;
 public class PlayerCollision : MonoBehaviour
 {
 
-    Vector3 originalPos;
+    public Vector3 originalPos;
+ 
 
-    void Start()
+    private void Awake()
     {
        originalPos = gameObject.transform.position;
 
     }
-    void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter2D (Collision2D other)
     {
+        
         if (other.gameObject.tag == "Enemy")
         {
+            Debug.Log("TESTER");
             gameObject.transform.position = originalPos;
         }
 
