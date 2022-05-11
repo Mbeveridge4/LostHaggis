@@ -341,7 +341,15 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/VSSettingsProvider.ref.dll"
-"Assets/Scripts/FloorCollision.cs"
+"Assets/Scripts/Camera Scripts/CameraMovement.cs"
+"Assets/Scripts/Enemy Scripts/Enemy Basic Movement.cs"
+"Assets/Scripts/Environment Scripts/FloorCollision.cs"
+"Assets/Scripts/gamemaster.cs"
+"Assets/Scripts/Player Scripts/Checkpoint.cs"
+"Assets/Scripts/Player Scripts/JumpScript.cs"
+"Assets/Scripts/Player Scripts/PlayerCollision.cs"
+"Assets/Scripts/Player Scripts/PlayerMovement.cs"
+"Assets/Scripts/Player Scripts/PlayerPos.cs"
 -langversion:8.0
 
 /deterministic

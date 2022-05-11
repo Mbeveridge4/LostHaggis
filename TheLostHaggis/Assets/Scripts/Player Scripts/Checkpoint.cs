@@ -4,17 +4,18 @@ using UnityEngine;
 
 public class Checkpoint : MonoBehaviour
 {
-    // Start is called before the first frame update
-    Vector2 resetPosition;
-    void Start()
+    private gamemaster gm;
+
+    private void Start()
     {
-        //sets the initial default position of the character
-        resetPosition = new Vector2(gameObject.transform.position.x, gameObject.transform.position.y);
+        gm = GameObject.FindGameObjectWithTag("GM").GetComponent<gamemaster>(); 
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        if(collision.CompareTag("Player"))
+        {
+            gm.LastCheckpointPos = transform.position;
+        }
     }
 }
