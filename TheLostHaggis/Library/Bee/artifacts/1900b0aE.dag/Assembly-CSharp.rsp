@@ -346,7 +346,7 @@
 "Assets/Scripts/Enemy Scripts/EnemyChase.cs"
 "Assets/Scripts/Enemy Scripts/EnemyPatrol.cs"
 "Assets/Scripts/Environment Scripts/FloorCollision.cs"
-"Assets/Scripts/Environment Scripts/OnScreenTextTest.cs"
+"Assets/Scripts/Environment Scripts/OnScreenText.cs"
 "Assets/Scripts/gamemaster.cs"
 "Assets/Scripts/Player Scripts/Checkpoint.cs"
 "Assets/Scripts/Player Scripts/JumpScript.cs"
