@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CameraMovement : MonoBehaviour
 {
+    //Coded by Mark Beveridge
     //declares object to be used as a target - can be set in unity editor
     public Transform player;
     //sets the delay in movement

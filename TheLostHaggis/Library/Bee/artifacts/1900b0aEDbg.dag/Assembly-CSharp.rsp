@@ -343,13 +343,20 @@
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/VSSettingsProvider.ref.dll"
 "Assets/Scripts/Camera Scripts/CameraMovement.cs"
 "Assets/Scripts/Enemy Scripts/Enemy Basic Movement.cs"
+"Assets/Scripts/Enemy Scripts/EnemyChase.cs"
+"Assets/Scripts/Enemy Scripts/EnemyPatrol.cs"
 "Assets/Scripts/Environment Scripts/FloorCollision.cs"
 "Assets/Scripts/gamemaster.cs"
+"Assets/Scripts/Object Scripts/Gate.cs"
 "Assets/Scripts/Player Scripts/Checkpoint.cs"
-"Assets/Scripts/Player Scripts/JumpScript.cs"
+"Assets/Scripts/Player Scripts/GameState.cs"
+"Assets/Scripts/Player Scripts/Player.cs"
 "Assets/Scripts/Player Scripts/PlayerCollision.cs"
+"Assets/Scripts/Player Scripts/PlayerInteraction.cs"
 "Assets/Scripts/Player Scripts/PlayerMovement.cs"
 "Assets/Scripts/Player Scripts/PlayerPos.cs"
+"Assets/Scripts/Save Scripts/PlayerState.cs"
+"Assets/Scripts/Save Scripts/SaveGame.cs"
 -langversion:8.0
 
 /deterministic
