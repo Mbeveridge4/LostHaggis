@@ -5,19 +5,31 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public int level;
-    public Vector2 currentPosition;
+    public Vector3 currentPosition;
     public Rigidbody2D RigidBody;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+  
 
-    // Update is called once per frame
+
     void Update()
     {
-        Rigidbody2D RigidBody = GetComponent<Rigidbody2D>();
-        currentPosition = RigidBody.position;
+    
+    }
+
+    public void SavePlayer()
+    {
+        SaveGame.SaveData(this);
+
+    }
+    public void LoadPlayer()
+    {
+        PlayerState data = SaveGame.LoadPlayer();
+
+        level = data.currentLevel;
+
+        currentPosition.x = data.playerCheckpoint[0];
+        currentPosition.x = data.playerCheckpoint[1];
+        currentPosition.x = data.playerCheckpoint[2];
+        transform.position = currentPosition;
     }
 }

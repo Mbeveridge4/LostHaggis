@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
     //Coded by Mark Beveridge
 
     //sets the jump speed
-    private float jumpVelocity = 10f;
+    private readonly float jumpVelocity = 10f;
     public Rigidbody2D RigidBody;
     private bool isGrounded = true;
     // sets multipliers for the jump and fall speeds

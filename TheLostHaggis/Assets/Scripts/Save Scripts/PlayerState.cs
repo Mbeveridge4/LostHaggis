@@ -13,9 +13,10 @@ public class PlayerState : MonoBehaviour
     public PlayerState(Player player)
     {
         currentLevel = player.level;
-        playerCheckpoint = new float[1];
+        playerCheckpoint = new float[3];
         playerCheckpoint[0] = player.transform.position.x;
         playerCheckpoint[1] = player.transform.position.y;
+        playerCheckpoint[2] = player.transform.position.z;
 
     }
 
