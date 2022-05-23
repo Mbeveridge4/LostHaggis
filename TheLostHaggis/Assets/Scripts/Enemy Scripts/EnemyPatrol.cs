@@ -33,7 +33,7 @@ public class EnemyPatrol : MonoBehaviour
         if (distance <= stopDistance)
         {
             // Update to the next target
-            currentPoint = currentPoint + 1;
+            currentPoint++;
 
             // If we've gone past the end of our list...
             // (if our current point index is equal or bigger than

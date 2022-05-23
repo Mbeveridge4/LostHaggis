@@ -1,35 +1,50 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
+[System.Serializable]
 public class Player : MonoBehaviour
 {
-    public int level;
-    public Vector3 currentPosition;
+    // coded by Mark Beveridge
+
+    public int level = 1;
     public Rigidbody2D RigidBody;
 
-  
-
-
-    void Update()
-    {
-    
-    }
-
+    // runs the Save element of SaveSystem
     public void SavePlayer()
     {
-        SaveGame.SaveData(this);
-
+        SaveSystem.SavePlayer(this);
+        
     }
+
+    //runs the load element of the save system.
     public void LoadPlayer()
     {
-        PlayerState data = SaveGame.LoadPlayer();
+        
+        PlayerData data = SaveSystem.LoadPlayer();
+        level = data.level;
 
-        level = data.currentLevel;
+        Vector3 position;
+        //changes the current position to the data loaded from the save using the float array to set each axis
+        position.x = data.position[0];
+        position.y = data.position[1];
+        position.z = data.position[2];
+        transform.position = position;
+        
 
-        currentPosition.x = data.playerCheckpoint[0];
-        currentPosition.x = data.playerCheckpoint[1];
-        currentPosition.x = data.playerCheckpoint[2];
-        transform.position = currentPosition;
     }
+    public void SaveScene()
+    {
+        //saves the current scene to playerprefs
+        PlayerPrefs.SetInt("SavedScene", SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void LoadScene()
+    {
+        //loads the last saved scene from playerprefs
+        SceneManager.LoadScene(PlayerPrefs.GetInt("SavedScene"));      
+    }
+
+
 }
