@@ -1392,7 +1392,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e207c36c93d7e644f891dd9f1c139295, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 494284432}
   dampTime: 0.4
   cameraPos: {x: 0, y: 0, z: 0}
   velocity: {x: 0, y: 0, z: 0}
@@ -2340,6 +2340,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6123ffeb95e671746ab5b7a9b88dec46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &494284432 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8142199791923323456, guid: 08ee62c19478a5740ab64597b843e154, type: 3}
+  m_PrefabInstance: {fileID: 494284430}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &510739947
 GameObject:
   m_ObjectHideFlags: 0
@@ -3497,7 +3502,7 @@ Transform:
   m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &835869372
 GameObject:
@@ -3629,7 +3634,7 @@ Transform:
   m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 50
+  m_RootOrder: 51
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 3.478}
 --- !u!1 &1005770141
 GameObject:
@@ -3761,7 +3766,7 @@ Transform:
   m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 32
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1019100261
 GameObject:
